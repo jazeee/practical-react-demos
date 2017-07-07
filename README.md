@@ -9,3 +9,4 @@ Based on `create-react-app`
 * 2017-06-23
   * Implement stateful and stateless React components.
   * Cover Promises and fetch API.
+* 2017-07-07
