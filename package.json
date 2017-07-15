@@ -3,12 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-addons-css-transition-group": "^15.6.0",
+    "react-addons-transition-group": "^15.6.0",
+    "react-dom": "^15.6.1",
+    "reactstrap": "^4.8.0"
   },
   "devDependencies": {
+    "babel-eslint": "^7.2.3",
     "enzyme": "^2.9.1",
     "enzyme-to-json": "^1.5.1",
+    "eslint": "^4.2.0",
+    "eslint-plugin-react": "^7.1.0",
     "react-scripts": "1.0.7",
     "react-test-renderer": "^15.6.1"
   },
@@ -16,6 +23,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint --ext .js --ext .jsx src",
+    "lint-fix": "npm run lint -- --fix"
   }
 }
