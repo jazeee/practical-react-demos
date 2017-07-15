@@ -11,15 +11,9 @@ export const DemoModal = (props) => {
 	return (
 		<Modal
 			isOpen={props.isOpen}
-			toggle={() => {
-				console.log('Modal triggered')
-				props.toggleModal()
-			}}
+			toggle={props.toggleModal}
 		>
-			<ModalHeader toggle={() => {
-				console.log('header triggered')
-				props.toggleModal()
-			}}>
+			<ModalHeader toggle={props.toggleModal}>
 				{props.title}
 			</ModalHeader>
 			<ModalBody>
@@ -34,5 +28,5 @@ export const DemoModal = (props) => {
 				</Button>
 			</ModalFooter>
 		</Modal>
-	)
-}
+	);
+};

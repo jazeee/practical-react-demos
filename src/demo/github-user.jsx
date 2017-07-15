@@ -1,18 +1,18 @@
-import React from "react";
-import User from "./user.jsx";
+import React from 'react';
+import User from './user.jsx';
 
 export default class GithubUser extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			user: {name: "?"},
+			user: {name: '?'},
 		};
 	}
 	componentDidMount = () => {
 		this.getContent();
 	}
 	getContent = () => {
-		fetch("https://api.github.com/users/jazeee")
+		fetch('https://api.github.com/users/jazeee')
 			.then( (response) => {
 				const jsonPromise = response.json();
 				return jsonPromise;

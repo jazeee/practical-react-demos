@@ -16,4 +16,7 @@ Based on `create-react-app`
 * 2017-06-23
   * Implement stateful and stateless React components.
   * Cover Promises and fetch API.
-* 2017-07-07
+* 2017-07-14
+  * Add eslint: `npm install --save-dev eslint eslint-plugin-react babel-eslint`
+  * Run `npm run lint-fix` to clean up lint issues.
+  * Add reactstrap and example button and modal

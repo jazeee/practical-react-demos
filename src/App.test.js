@@ -1,17 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import App from './App';
-import {shallow, mount, render} from 'enzyme';
+import {shallow} from 'enzyme';
 import toJson from 'enzyme-to-json';
 
 it('renders without crashing', () => {
-  shallow(<App />);
+	shallow(<App />);
 });
 
 it('renders correctly', () => {
-  const wrapper = shallow(
-    <App/>
-  );
+	const wrapper = shallow(
+		<App/>
+	);
 
-  expect(toJson(wrapper)).toMatchSnapshot();
+	expect(toJson(wrapper)).toMatchSnapshot();
 });
