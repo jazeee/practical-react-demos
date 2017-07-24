@@ -1,5 +1,6 @@
 # practical-react-demos
 Practical React demo code for training sessions
+https://github.com/jazeee/practical-react-demos
 
 Based on `create-react-app`
 
@@ -20,3 +21,6 @@ Based on `create-react-app`
   * Add eslint: `npm install --save-dev eslint eslint-plugin-react babel-eslint`
   * Run `npm run lint-fix` to clean up lint issues.
   * Add reactstrap and example button and modal
+* 2017-07-24
+  * Add Navbar
+	*
