@@ -3,6 +3,7 @@ import GithubUser from './demo/github-user.jsx';
 import './App.css';
 import {DemoButton} from './bootstrap4/demo-button.jsx';
 import {DemoModal} from './bootstrap4/demo-modal.jsx';
+import {Header} from './nav/header.jsx';
 
 class App extends Component {
 	constructor(props) {
@@ -18,6 +19,7 @@ class App extends Component {
 		render = () => {
 			return (
 				<div className='App'>
+					<Header />
 					<GithubUser />
 					<DemoButton
 						onClick={this.toggleModal}
