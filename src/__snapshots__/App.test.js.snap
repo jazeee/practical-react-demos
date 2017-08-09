@@ -4,6 +4,17 @@ exports[`renders correctly 1`] = `
 <div
   className="App"
 >
+  <Header />
   <GithubUser />
+  <Component
+    onClick={[Function]}
+    text="Hello Jaz"
+  />
+  <Component
+    body="Welcome to modals, Jaz."
+    isOpen={false}
+    title="Hello"
+    toggleModal={[Function]}
+  />
 </div>
 `;
