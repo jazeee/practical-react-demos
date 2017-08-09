@@ -5,7 +5,7 @@ import {DemoButton} from './bootstrap4/demo-button.jsx';
 import {DemoModal} from './bootstrap4/demo-modal.jsx';
 import {Header} from './nav/header.jsx';
 
-class App extends Component {
+export class App extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -35,5 +35,3 @@ class App extends Component {
 			);
 		}
 }
-
-export default App;

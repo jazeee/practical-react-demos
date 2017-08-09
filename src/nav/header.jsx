@@ -1,5 +1,6 @@
 import React from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import {Link} from 'react-router-dom';
 
 export class Header extends React.Component {
 	constructor(props) {
@@ -18,6 +19,9 @@ export class Header extends React.Component {
 				<NavbarToggler right onClick={this.toggleCollapse} />
 				<Collapse isOpen={this.state.isCollapseOpen} navbar>
 					<Nav className='ml-auto' navbar>
+						<NavItem>
+							<NavLink tag={Link} to='/'>Home</NavLink>
+						</NavItem>
 						<NavItem>
 							<NavLink href='/repos/'>Repos</NavLink>
 						</NavItem>
