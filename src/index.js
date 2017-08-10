@@ -6,8 +6,6 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter } from 'react-router-dom';
 
-console.log(BrowserRouter);
-console.log(Router);
 ReactDOM.render(
 	(
 		<BrowserRouter>
