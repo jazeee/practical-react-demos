@@ -1,5 +1,5 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React from "react";
+import {Link} from "react-router-dom";
 
 export const Home = () => {
 	return (
@@ -8,7 +8,7 @@ export const Home = () => {
 				Hello World
 			</h4>
 
-			<Link to='/github'>Open Github</Link>
+			<Link to="/github">Open Github</Link>
 		</div>
 	);
 };

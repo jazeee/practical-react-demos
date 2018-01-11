@@ -1,13 +1,13 @@
-import React from 'react';
-import {App} from './App';
-import {shallow} from 'enzyme';
-import toJson from 'enzyme-to-json';
+import React from "react";
+import toJson from "enzyme-to-json";
+import {App} from "./App";
+import {shallow} from "enzyme";
 
-it('renders without crashing', () => {
+it("renders without crashing", () => {
 	shallow(<App />);
 });
 
-it('renders correctly', () => {
+it("renders correctly", () => {
 	const wrapper = shallow(
 		<App/>
 	);

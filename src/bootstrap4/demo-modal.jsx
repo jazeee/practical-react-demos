@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 import {
 	Button,
 	Modal,
-	ModalHeader,
 	ModalBody,
 	ModalFooter,
-} from 'reactstrap';
+	ModalHeader,
+} from "reactstrap";
 
 export const DemoModal = (props) => {
 	return (
@@ -21,7 +21,7 @@ export const DemoModal = (props) => {
 			</ModalBody>
 			<ModalFooter>
 				<Button
-					color='primary'
+					color="primary"
 					onClick={props.toggleModal}
 				>
 					Close

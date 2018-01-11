@@ -1,6 +1,6 @@
-import React from 'react';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
-import {Link} from 'react-router-dom';
+import React from "react";
+import {Collapse, Nav, NavItem, NavLink, Navbar, NavbarBrand, NavbarToggler} from "reactstrap";
+import {Link} from "react-router-dom";
 
 export class Header extends React.Component {
 	constructor(props) {
@@ -14,16 +14,28 @@ export class Header extends React.Component {
 	}
 	render = () => {
 		return (
-			<Navbar color='primary' inverse toggleable>
-				<NavbarBrand href='/'>Github Browser</NavbarBrand>
-				<NavbarToggler right onClick={this.toggleCollapse} />
-				<Collapse isOpen={this.state.isCollapseOpen} navbar>
-					<Nav className='ml-auto' navbar>
+			<Navbar
+				color="primary"
+				inverse
+				toggleable>
+				<NavbarBrand href="/">Github Browser</NavbarBrand>
+				<NavbarToggler
+					right
+					onClick={this.toggleCollapse} />
+				<Collapse
+					isOpen={this.state.isCollapseOpen}
+					navbar>
+					<Nav
+						className="ml-auto"
+						navbar>
 						<NavItem>
-							<NavLink tag={Link} to='/'>Home</NavLink>
+							<NavLink
+								tag={Link}
+								to="/">Home
+							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink href='/repos/'>Repos</NavLink>
+							<NavLink href="/repos/">Repos</NavLink>
 						</NavItem>
 					</Nav>
 				</Collapse>
