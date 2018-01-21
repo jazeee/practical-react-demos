@@ -1,14 +1,12 @@
 {
   "env": {
     "browser": true,
-    "cypress/globals": true,
     "es6": true,
     "jest": true,
     "node": true
   },
   "extends": [
     "eslint:recommended",
-    "plugin:flowtype/recommended",
     "plugin:react/recommended"
   ],
   "parser": "babel-eslint",
@@ -21,8 +19,6 @@
     "sourceType": "module"
   },
   "plugins": [
-    "cypress",
-    "flowtype",
     "react",
     "sort-imports-es6-autofix"
   ],
@@ -41,7 +37,7 @@
     "eqeqeq": 2,
     "guard-for-in": "error",
     "indent": [
-      "error",
+      "warn",
       "tab",
       {"SwitchCase": 1}
     ],
