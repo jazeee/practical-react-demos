@@ -23,4 +23,6 @@ Based on `create-react-app`
   * Add reactstrap and example button and modal
 * 2017-07-24
   * Add Navbar
-	*
+* 2018-02-02
+  * Remove Bootstrap, simplify
+  * Prepare for Redux
