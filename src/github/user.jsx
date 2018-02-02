@@ -12,6 +12,7 @@ export default ({name, avatar_url, bio, html_url}) => (
 				src={avatar_url}
 				alt="Avatar" />
 		</a>
+		<h4>Bio</h4>
 		<p>{bio}</p>
 	</div>
 );

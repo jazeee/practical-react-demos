@@ -1,6 +1,6 @@
 import React from "react";
 import toJson from "enzyme-to-json";
-import {App} from "./App";
+import {App} from "./app";
 import {shallow} from "enzyme";
 
 it("renders without crashing", () => {
