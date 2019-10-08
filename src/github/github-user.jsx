@@ -1,31 +1,41 @@
 import React from "react";
-import User from "./user.jsx";
+import {User} from "./user.jsx";
+import {actions} from "./state/user.js";
+import {connect} from "react-redux";
 
-export default class GithubUser extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			user: {name: "?"},
-		};
-	}
+class GithubUserContainer extends React.Component {
 	componentDidMount = () => {
 		this.getContent();
 	}
 	getContent = () => {
+		this.props.resetState();
 		fetch("https://api.github.com/users/jazeee")
 			.then( (response) => {
 				const jsonPromise = response.json();
 				return jsonPromise;
 			} )
 			.then( (user) => {
-				this.setState({user});
+				this.props.setUser(user);
+				user.name = "blah";
 			})
 			.catch(console.error);
 	}
 	render = () => {
-		const {user} = this.state;
+		const {user} = this.props;
 		return (
 			<User {...user} />
 		);
 	}
 }
+
+const mapStateToProps = (state) => {
+	const {userState: {user}} = state;
+	return {
+		user,
+	};
+};
+
+const {setUser, resetState} = actions;
+const mapDispatchToProps = {setUser, resetState};
+
+export const GithubUser = connect(mapStateToProps, mapDispatchToProps)(GithubUserContainer);
